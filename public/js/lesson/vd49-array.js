@@ -34,19 +34,20 @@ let courses = [
     coin: 10,
   },
 ];
-let totalCoin = courses.reduce((total, course) => (total += course.coin), 0);
+let totalCoin = courses.reduce((total, course) => console.log(total));
+console.log(totalCoin);
 // console.log(totalCoin);
 
 // bài tập
 // lấy name của courses
-let nameCoures = courses.reduce((course, topic) => {
-  return course.concat(topic.name);
-}, []);
+// let nameCoures = courses.reduce((course, topic) => {
+//   return course.concat(topic.name);
+// }, []);
 
-console.log(nameCoures);
+// console.log(nameCoures);
 
-// thêm Title: trước naame courses
-let htmls = nameCoures.map((name) => {
-  return "Title: " + name;
-});
-console.log(htmls);
+// // thêm Title: trước naame courses
+// let htmls = nameCoures.map((name) => {
+//   return "Title: " + name;
+// });
+// console.log(htmls);
